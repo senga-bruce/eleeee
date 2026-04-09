@@ -258,3 +258,26 @@
     transform: translateX(0);
   }
 }
+
+/* About us section css */
+#about {
+  padding: 4rem 2rem;
+  background-color: black;
+}
+.mission, .vision {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  backdrop-filter: blur(8px);  
+  padding: 2rem;
+  border-radius: 10px;
+  width: 40%;    
+  box-shadow: 2px 2px 10px black;     
+  transition: all 0.5s ease;
+  cursor: pointer ;
+}
+.mission:hover,.vision:hover {
+  box-shadow: 4px 4px 20px black;
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+  transform: translateY(-10px);
+}
