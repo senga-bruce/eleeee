@@ -296,4 +296,15 @@
   background-color: rgb(28, 27, 27);
   padding: 2rem;
   text-align: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  transform: translateY(-10%) scale(1);
+  width: 45%;
+  cursor: pointer;
+
+}
+.mission:hover, .vision:hover {
+  background-color: rgb(50, 48, 48);
+  transition: all 0.3s ease;
+  transform: translateY(-10%) scale(1.1);
 }
