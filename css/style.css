@@ -30,6 +30,7 @@
   height: 110px;
   background-color: rgb(61, 0, 0);
   color: whitesmoke;
+  position: fixed;
 }
 
 .nav-links {
@@ -307,4 +308,60 @@
   background-color: rgb(50, 48, 48);
   transition: all 0.3s ease;
   transform: translateY(-10%) scale(1.1);
+}
+
+
+/* section team  */
+
+#team .section-div .team .team-member {
+  width: 400px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  margin-left: 15px;
+}
+#team .section-div .team .team-member img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Footer section css */
+.footer {
+  background-color: rgb(61, 0, 0);
+  color: whitesmoke;
+  text-align: center;
+  padding: 1rem;
+}
+.footer .footer-big .footer-flexs{
+  gap: 200px;
+}
+.footer .footer-big .footer-flexs .logo img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+} 
+.footer .footer-big .footer-flexs .logo p{
+  font-size: 10px;
+  font-weight: 700;
+}
+.footer .footer-big .footer-flexs .footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-big .footer-flexs .footer-content a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+.footer .footer-big .footer-flexs .footer-content a:hover {
+  color: rgb(56, 56, 255);
+  font-size: 16px;
+  transition: all 0.8s ease;
 }
