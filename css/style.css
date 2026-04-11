@@ -324,6 +324,12 @@
   cursor: pointer;
   margin-left: 15px;
 }
+#team .section-div .team .team-member:hover {
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease;
+  transform: translateY(-10%) scale(1.1);
+  box-shadow: 5px 5px 200px rgb(61, 0, 0);
+}
 #team .section-div .team .team-member img {
   width: 100px;
   height: 100px;
@@ -345,7 +351,13 @@
   width: 100px;
   height: auto;
   border-radius: 5px;
+  cursor: pointer;
 } 
+.footer .footer-big .footer-flexs .logo img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 20px black;
+}
 .footer .footer-big .footer-flexs .logo p{
   font-size: 10px;
   font-weight: 700;
