@@ -1,52 +1,46 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Commerce</title>
 
-    <!-- favicon -->
-    <link rel="icon" href="/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commerce</title>
 
-    <!-- CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- favicon -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <!-- icon -->
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <link rel="icon" type="image/png" sizes="1080x180" href="images/logo.png" />
-  </head>
+  <!-- icon -->
 
-  <!-- main body of the site  -->
-  <body>
-    <div class="page">
-      <!-- small header for open time  -->
-      <div id="one" class="min-header">
-        <div id="two" class="min-header-content">
-          <div id="three" class="hour">open : mon - sunday 8:00 - 18:00</div>
-          <div class="header-contact">
-            <i class="fas fa-phone"></i> +250 799 123 456 &nbsp; &nbsp; &nbsp;
-            <i class="fas fa-envelope"></i> info@gmail.com &nbsp; &nbsp; &nbsp;
-            <i class="fab fa-instagram"></i>
-            &nbsp; &nbsp; &nbsp;
-            <i class="fab fa-x-twitter"></i>
-            &nbsp; &nbsp; &nbsp;
-          </div>
+  <link rel="icon" type="image/png" sizes="1080x180" href="images/logo.png" />
+</head>
+
+<!-- main body of the site  -->
+
+<body>
+
+  <div class="page">
+    <!-- small header for open time  -->
+    <div id="one" class="min-header">
+      <div id="two" class="min-header-content">
+        <div id="three" class="hour">open : mon - sunday 8:00 - 18:00</div>
+        <div class="header-contact">
+          <i class="fas fa-phone"></i> +250 799 123 456 &nbsp; &nbsp; &nbsp;
+          <i class="fas fa-envelope"></i> info@gmail.com &nbsp; &nbsp; &nbsp;
+          <i class="fab fa-instagram"></i>
+          &nbsp; &nbsp; &nbsp;
+          <i class="fab fa-x-twitter"></i>
+          &nbsp; &nbsp; &nbsp;
         </div>
+      </div>
 
         <!-- main header containing logo and links  -->
         <div class="main-header d-flex">
@@ -105,6 +99,45 @@
               </div>
               <!-- <i class="fas fa-bars" onclick="showMenu()"></i> -->
             </div>
+            <div class="links">
+              <nav id="navLinks" class="nav-links">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                  <li>
+                    <a href="#" class="text-decoration-none text-white"><i class="fa-solid fa-house fa-lg"></i> Home</a>
+                  </li>
+                  <li>
+                    <a href="" class="text-decoration-none text-white"><i class="fa-solid fa-boxes-stacked fa-lg"></i>
+                      Product</a>
+                  </li>
+                  <li>
+                    <a href="" class="text-decoration-none text-white"><i class="fa-solid fa-address-card fa-lg"></i>
+                      About</a>
+                  </li>
+                  <li>
+                    <a href="" class="text-decoration-none text-white"><i class="fa-solid fa-cart-shopping fa-lg"></i>
+                      Cart</a>
+                  </li>
+                  <li>
+                    <a href="" class="text-decoration-none text-white"><i
+                        class="fa-solid fa-right-from-bracket fa-lg"></i>
+                      Logout</a>
+                  </li>
+                  <li>
+                    <a href="user-dashboard.html" class="text-decoration-none text-white"><i
+                        class="fa-solid fa-user fa-lg"></i>
+                      User Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="admin-dashboard.html" class="text-decoration-none text-white"><i
+                        class="fa-solid fa-lock fa-lg"></i>
+                      Admin Dashboard</a>
+                  </li>
+                </ul>
+              </nav>
+              <i class="fas fa-bars" onclick="showMenu()"></i>
+            </div>
+            <!-- <i class="fas fa-bars" onclick="showMenu()"></i> -->
           </div>
         </div>
       </div>
