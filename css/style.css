@@ -30,6 +30,7 @@
   height: 110px;
   background-color: rgb(61, 0, 0);
   color: whitesmoke;
+  position: fixed;
 }
 
 .nav-links {
@@ -129,7 +130,7 @@
   position: relative;
   width: 100%;
   max-width: 100%;
-  /* height: 90vh; */
+  height: 96vh;
   margin: 2rem auto;
   /* margin-top: 105px; */
   overflow: hidden;
@@ -257,4 +258,122 @@
   100% {
     transform: translateX(0);
   }
+}
+
+#product {
+  padding: 2rem;
+}
+
+.product-card {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 0.75rem 0 0.25rem;
+  font-size: 1rem;
+}
+
+.product-card p {
+  color: rgb(163, 0, 0);
+  font-weight: 700;
+}
+.aboutUs{
+  background-color: black;
+}
+.mission, .vision {
+  color: white;
+  background-color: rgb(28, 27, 27);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  transform: translateY(-10%) scale(1);
+  width: 45%;
+  cursor: pointer;
+
+}
+.mission:hover, .vision:hover {
+  background-color: rgb(50, 48, 48);
+  transition: all 0.3s ease;
+  transform: translateY(-10%) scale(1.1);
+}
+
+
+/* section team  */
+
+#team .section-div .team .team-member {
+  width: 400px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  margin-left: 15px;
+}
+#team .section-div .team .team-member:hover {
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease;
+  transform: translateY(-10%) scale(1.1);
+  box-shadow: 5px 5px 200px rgb(61, 0, 0);
+}
+#team .section-div .team .team-member img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Footer section css */
+.footer {
+  background-color: rgb(61, 0, 0);
+  color: whitesmoke;
+  text-align: center;
+  padding: 1rem;
+}
+.footer .footer-big .footer-flexs{
+  gap: 200px;
+}
+.footer .footer-big .footer-flexs .logo img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+} 
+.footer .footer-big .footer-flexs .logo img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 20px black;
+}
+.footer .footer-big .footer-flexs .logo p{
+  font-size: 10px;
+  font-weight: 700;
+}
+.footer .footer-big .footer-flexs .footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-big .footer-flexs .footer-content a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+.footer .footer-big .footer-flexs .footer-content a:hover {
+  color: rgb(56, 56, 255);
+  font-size: 16px;
+  transition: all 0.8s ease;
 }
