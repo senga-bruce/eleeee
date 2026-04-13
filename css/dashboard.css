@@ -1,0 +1,671 @@
+/* ===================================================
+   DASHBOARD CSS
+   Add this file as: <link rel="stylesheet" href="css/dashboard.css" />
+   Do NOT change your existing style.css
+=================================================== */
+
+/* ── Layout ── */
+.dashboard-page {
+    min-height: calc(100vh - 115px);
+    background: #f4f6fb;
+    flex-direction: row;
+}
+
+.dashboard-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+/* ── Sidebar ── */
+.dashboard-sidebar {
+    width: 230px;
+    min-height: 100%;
+    background: rgb(61, 0, 0);
+    color: white;
+    padding: 1.5rem 1rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.admin-sidebar {
+    background: rgb(20, 20, 50);
+}
+
+.sidebar-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.admin-avatar {
+    background: rgba(255, 200, 0, 0.25);
+    color: #ffd600;
+}
+
+.sidebar-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.sidebar-role {
+    font-size: 0.72rem;
+    opacity: 0.6;
+    margin: 0;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    flex: 1;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.6rem 0.85rem;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.88rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+    background: rgba(255, 255, 255, 0.13);
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-link i {
+    width: 17px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.sidebar-back {
+    margin-top: auto;
+    color: rgba(255, 180, 180, 0.8) !important;
+}
+
+.sidebar-back:hover {
+    background: rgba(255, 80, 80, 0.12) !important;
+    color: #ffbbbb !important;
+}
+
+.sidebar-logout {
+    margin-top: auto;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-logout-btn {
+    width: 100%;
+    padding: 0.65rem 0.85rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 80, 80, 0.15);
+    color: #ffb3b3;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.sidebar-logout-btn:hover {
+    background: rgba(255, 80, 80, 0.25);
+    color: #ffffff;
+}
+
+.sidebar-logout-btn i {
+    font-size: 0.9rem;
+}
+
+/* ── Main content ── */
+.dashboard-main {
+    flex: 1;
+    padding: 2rem;
+    overflow-x: auto;
+}
+
+/* ── Tabs ── */
+.dash-tab {
+    display: none;
+}
+
+.dash-tab.active {
+    display: block;
+}
+
+/* ── Page header ── */
+.dash-header {
+    margin-bottom: 1.75rem;
+}
+
+.dash-header h2 {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.2rem;
+}
+
+.dash-subtitle {
+    font-size: 0.88rem;
+    color: #888;
+    margin: 0;
+}
+
+.dash-header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+/* ── Stat cards ── */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.2rem 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+}
+
+.icon-red {
+    background: #fff0f0;
+    color: rgb(163, 0, 0);
+}
+
+.icon-green {
+    background: #f0fff4;
+    color: #2d9e5f;
+}
+
+.icon-amber {
+    background: #fffbf0;
+    color: #c08000;
+}
+
+.icon-blue {
+    background: #f0f4ff;
+    color: #3a6fde;
+}
+
+.stat-label {
+    font-size: 0.76rem;
+    color: #999;
+    margin: 0 0 0.15rem;
+}
+
+.stat-value {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+/* ── Section title ── */
+.dash-section {
+    margin-top: 0.5rem;
+}
+
+.section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.85rem;
+}
+
+/* ── Table ── */
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.dash-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    min-width: 480px;
+}
+
+.dash-table thead {
+    background: rgb(61, 0, 0);
+    color: white;
+}
+
+.dash-table thead th {
+    padding: 11px 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
+
+.dash-table tbody tr {
+    border-bottom: 1px solid #f2f2f2;
+    transition: background 0.15s;
+}
+
+.dash-table tbody tr:hover {
+    background: #fafafa;
+}
+
+.dash-table tbody td {
+    padding: 11px 15px;
+    font-size: 0.86rem;
+    color: #444;
+}
+
+/* ── Badges ── */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.73rem;
+    font-weight: 600;
+}
+
+.badge-success {
+    background: #e6f9f0;
+    color: #1a7a46;
+}
+
+.badge-warning {
+    background: #fff8e1;
+    color: #a07000;
+}
+
+.badge-info {
+    background: #e8f2ff;
+    color: #1a4fa0;
+}
+
+.badge-danger {
+    background: #fde8e8;
+    color: #a01a1a;
+}
+
+/* ── Buttons ── */
+.btn-sm {
+    background: rgb(61, 0, 0);
+    color: white;
+    border: none;
+    padding: 5px 13px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-sm:hover {
+    background: rgb(100, 0, 0);
+}
+
+.btn-del {
+    background: #9e1a1a;
+}
+
+.btn-del:hover {
+    background: #c02020;
+}
+
+.action-btns {
+    display: flex;
+    gap: 6px;
+}
+
+.btn-primary-dash {
+    background: rgb(61, 0, 0);
+    color: white;
+    border: none;
+    padding: 0.55rem 1.3rem;
+    border-radius: 8px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-primary-dash:hover {
+    background: rgb(100, 0, 0);
+    transform: translateY(-1px);
+}
+
+.btn-primary-dash.admin-btn {
+    background: rgb(20, 20, 50);
+}
+
+.btn-primary-dash.admin-btn:hover {
+    background: rgb(40, 40, 80);
+    transform: translateY(-1px);
+}
+
+
+.btn-save {
+    background: rgb(61, 0, 0);
+    color: white;
+    border: none;
+    padding: 0.65rem 1.8rem;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.2s;
+}
+
+.btn-save:hover {
+    background: rgb(100, 0, 0);
+}
+
+.btn-add-cart {
+    background: rgb(61, 0, 0);
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-add-cart:hover {
+    background: rgb(100, 0, 0);
+}
+
+.btn-remove {
+    background: #fde8e8;
+    color: #a01a1a;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background 0.2s;
+}
+
+.btn-remove:hover {
+    background: #f7c5c5;
+}
+
+/* ── Wishlist ── */
+.wishlist-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.wishlist-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 210px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s;
+}
+
+.wishlist-card:hover {
+    transform: translateY(-4px);
+}
+
+.wishlist-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    background: #e0e0e0;
+}
+
+.wishlist-info {
+    padding: 0.75rem;
+}
+
+.wishlist-info h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.wl-price {
+    color: rgb(163, 0, 0);
+    font-weight: 700;
+    margin-bottom: 0.65rem;
+}
+
+.wishlist-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+/* ── Profile form ── */
+.profile-form-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.75rem;
+    max-width: 580px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+    flex: 1;
+    min-width: 200px;
+}
+
+.form-group label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input {
+    padding: 0.55rem 0.85rem;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    outline: none;
+    transition: border 0.2s;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-group input:focus {
+    border-color: rgb(61, 0, 0);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .dashboard-wrapper {
+        flex-direction: column;
+    }
+
+    .dashboard-sidebar {
+        width: 100%;
+        min-height: auto;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+    }
+
+    .sidebar-link {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.78rem;
+    }
+
+    .dashboard-main {
+        padding: 1rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ── Dashboard Page Heading ── */
+.dashboard-page-heading {
+    background: #fff;
+    padding: 2rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.dashboard-page-heading h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.dashboard-page-subtitle {
+    margin: 0.5rem 0 0 0;
+    font-size: 0.95rem;
+    color: #888;
+}
+
+/* ── Dashboard Alert ── */
+.dashboard-alert {
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    background: #e8f5e9;
+    color: #2e7d32;
+    border-left: 4px solid #2e7d32;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    display: none;
+    opacity: 1;
+    transition: opacity 0.3s;
+    font-size: 0.9rem;
+}
+
+/* ── Dashboard Footer ── */
+.dashboard-footer {
+    background: #f4f6fb;
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 1px solid #eee;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.dashboard-footer a {
+    color: rgb(61, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.dashboard-footer a:hover {
+    text-decoration: underline;
+}
+
+.admin-sidebar .dashboard-footer a {
+    color: rgb(20, 20, 50);
+}
+
+/* ── Dashboard Input Field ── */
+.dash-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.dash-input:focus {
+    outline: none;
+    border-color: rgb(61, 0, 0);
+}
+
+/* ── Stat Image in Tables ── */
+.stat-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #e0e0e0;
+}
+
+/* ── Body Reset ── */
+body {
+    margin: 0;
+    padding: 0;
+}
